@@ -2,6 +2,8 @@ import {
   FormControl,
   FormControlProps,
   Stack,
+  InputGroup,
+  InputLeftAddon,
   NumberInput,
   NumberInputField,
   NumberInputStepper,
@@ -34,34 +36,42 @@ export default function QRInput({
   }
 
   return (
-    <FormControl isRequired isInvalid={isInvalid} {...props}>
+    <FormControl isInvalid={isInvalid} {...props}>
       <Stack shouldWrapChildren direction='row'>
-        <NumberInput
-          defaultValue={1}
-          min={1}
-          maxW={32}
-          clampValueOnBlur={false}
-          onChange={setStart}
-        >
-          <NumberInputField />
-          <NumberInputStepper>
-            <NumberIncrementStepper />
-            <NumberDecrementStepper />
-          </NumberInputStepper>
-        </NumberInput>
-        <NumberInput
-          defaultValue={100}
-          max={99999}
-          maxW={32}
-          clampValueOnBlur={false}
-          onChange={setEnd}
-        >
-          <NumberInputField />
-          <NumberInputStepper>
-            <NumberIncrementStepper />
-            <NumberDecrementStepper />
-          </NumberInputStepper>
-        </NumberInput>
+        <InputGroup>
+          <InputLeftAddon children='begin' />
+
+          <NumberInput
+            defaultValue={1}
+            min={1}
+            maxW={32}
+            clampValueOnBlur={false}
+            onChange={setStart}
+          >
+            <NumberInputField />
+            <NumberInputStepper>
+              <NumberIncrementStepper />
+              <NumberDecrementStepper />
+            </NumberInputStepper>
+          </NumberInput>
+        </InputGroup>
+
+        <InputGroup>
+          <InputLeftAddon children='end' />
+          <NumberInput
+            defaultValue={100}
+            max={99999}
+            maxW={32}
+            clampValueOnBlur={false}
+            onChange={setEnd}
+          >
+            <NumberInputField />
+            <NumberInputStepper>
+              <NumberIncrementStepper />
+              <NumberDecrementStepper />
+            </NumberInputStepper>
+          </NumberInput>
+        </InputGroup>
       </Stack>
     </FormControl>
   )
