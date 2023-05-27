@@ -1,4 +1,4 @@
 /**
  * [url, code]
  */
-export type ZippedUrlAndQR = string[][];
+export type ZippedUrlAndQR = string[][]

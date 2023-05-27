@@ -1,4 +1,4 @@
-import { createIcon } from '@chakra-ui/react';
+import { createIcon } from '@chakra-ui/react'
 
 const SettingsIcon = createIcon({
   displayName: 'SettingsIcon',
@@ -7,6 +7,6 @@ const SettingsIcon = createIcon({
   defaultProps: {
     color: 'current-color',
   },
-});
+})
 
-export default SettingsIcon;
+export default SettingsIcon

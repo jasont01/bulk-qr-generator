@@ -1,4 +1,4 @@
-import { createIcon } from '@chakra-ui/react';
+import { createIcon } from '@chakra-ui/react'
 
 const MoonIcon = createIcon({
   displayName: 'MoonIcon',
@@ -7,6 +7,6 @@ const MoonIcon = createIcon({
   defaultProps: {
     color: 'current-color',
   },
-});
+})
 
-export default MoonIcon;
+export default MoonIcon

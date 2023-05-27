@@ -1,4 +1,4 @@
-import { createIcon } from '@chakra-ui/react';
+import { createIcon } from '@chakra-ui/react'
 
 const SunIcon = createIcon({
   displayName: 'SunIcon',
@@ -7,6 +7,6 @@ const SunIcon = createIcon({
   defaultProps: {
     color: 'current-color',
   },
-});
+})
 
-export default SunIcon;
+export default SunIcon

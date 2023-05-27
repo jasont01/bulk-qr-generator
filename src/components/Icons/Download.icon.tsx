@@ -1,4 +1,4 @@
-import { createIcon } from '@chakra-ui/react';
+import { createIcon } from '@chakra-ui/react'
 
 const DownloadIIcon = createIcon({
   displayName: 'DownloadIIcon',
@@ -7,6 +7,6 @@ const DownloadIIcon = createIcon({
   defaultProps: {
     color: 'current-color',
   },
-});
+})
 
-export default DownloadIIcon;
+export default DownloadIIcon

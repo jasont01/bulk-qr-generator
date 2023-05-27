@@ -1,4 +1,4 @@
-import { createIcon } from '@chakra-ui/react';
+import { createIcon } from '@chakra-ui/react'
 
 const QRIcon = createIcon({
   displayName: 'QRIcon',
@@ -7,6 +7,6 @@ const QRIcon = createIcon({
   defaultProps: {
     color: 'current-color',
   },
-});
+})
 
-export default QRIcon;
+export default QRIcon

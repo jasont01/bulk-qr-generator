@@ -1,4 +1,4 @@
-import { createIcon } from '@chakra-ui/react';
+import { createIcon } from '@chakra-ui/react'
 
 const ZipFolderIcon = createIcon({
   displayName: 'ZipFolderIcon',
@@ -7,6 +7,6 @@ const ZipFolderIcon = createIcon({
   defaultProps: {
     color: 'current-color',
   },
-});
+})
 
-export default ZipFolderIcon;
+export default ZipFolderIcon
