@@ -1,1 +1,1 @@
-export const MAX_CODES = 200
+export const MAX_CODES = 1000
