@@ -45,7 +45,8 @@ export default function QRForm({ onSubmit }: QRFormProps) {
       <QRInput range={range} onChange={setRange} isInvalid={isInvalid} />
       <Button
         type='submit'
-        disabled={isInvalid}
+        isDisabled={isInvalid}
+        colorScheme='green'
         size='lg'
         display='flex'
         mt='5'
